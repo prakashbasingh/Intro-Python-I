@@ -15,7 +15,7 @@ for i in range(5):
     y.append(i + 1)
 print (y)
 # or
-y = [i + 1 for i in range(5)]
+y = [i for i in range(5)]
 print(y)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
@@ -50,5 +50,5 @@ for i in x:
         y.append(i)
 print(y)
 # or
-y = [int(i) for i in x if int(i)%2 == 0]
+y = [i for i in x if int(i)%2 == 0]
 print(y)
