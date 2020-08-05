@@ -9,4 +9,7 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
-
+if(int(num)%2 == 0):
+    print(f"{num} is Even!!!!")
+else:
+    print(f"{num} is Odd")
