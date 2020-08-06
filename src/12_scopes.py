@@ -5,8 +5,9 @@
 x = 12
 
 def change_x():
+    global x # keyword global should be added to make variable "x" available outside of function scope
     x = 99
-
+    
 change_x()
 
 # This prints 12. What do we have to modify in change_x() to get it to print 99?
@@ -19,6 +20,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y # keyword nonlocal will allow variable accessible out side the function but inside the parent function
         y = 999
 
     inner()
@@ -27,6 +29,5 @@ def outer():
     # 999?
     # Note: Google "python nested function scope".
     print(y)
-
 
 outer()
